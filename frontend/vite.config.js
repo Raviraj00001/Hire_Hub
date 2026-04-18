@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Hire_Hub/",
+  base: process.env.NODE_ENV === "production" ? "/Hire_Hub/" : "/",
   server: {
     port: 3000
   }
