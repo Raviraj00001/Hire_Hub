@@ -61,6 +61,8 @@ Deployment guide:
 
 - [frontend/DEPLOYMENT.md](/c:/Users/Ravi%20raj%20kumar/Pm4/frontend/DEPLOYMENT.md)
 
+GitHub Pages is configured through a GitHub Actions workflow in [.github/workflows/deploy-pages.yml](/c:/Users/Ravi%20raj%20kumar/Pm4/.github/workflows/deploy-pages.yml). Push to `main` after setting the `VITE_API_BASE_URL` repository variable.
+
 ## Main Features
 
 - Register and login with simple database storage

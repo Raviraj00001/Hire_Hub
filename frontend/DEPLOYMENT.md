@@ -39,15 +39,25 @@ VITE_API_BASE_URL=https://hirehub-backend.onrender.com
 
 ## Deploy Steps
 
-Run these commands:
+This repo is configured with a GitHub Actions workflow that deploys the frontend automatically.
 
-```powershell
-cd "C:\Users\Ravi raj kumar\Pm4\frontend"
-npm install
-npm run deploy
+What to do:
+
+1. Push your latest code to the `main` branch.
+2. In GitHub, open the repository.
+3. Go to `Settings` -> `Pages`.
+4. Under source, choose `GitHub Actions`.
+5. In GitHub, open `Settings` -> `Secrets and variables` -> `Actions` -> `Variables`.
+6. Add a repository variable named `VITE_API_BASE_URL`.
+7. Set its value to your deployed backend URL.
+
+Example:
+
+```text
+https://hirehub-backend.onrender.com
 ```
 
-This publishes the built app to the `gh-pages` branch.
+After that, every push to `main` will build and publish the frontend automatically.
 
 ## GitHub Pages Settings
 
@@ -56,9 +66,7 @@ In GitHub:
 1. Open the `Hire_Hub` repository
 2. Go to `Settings`
 3. Open `Pages`
-4. Set source to `Deploy from a branch`
-5. Select branch `gh-pages`
-6. Select folder `/ (root)`
+4. Set source to `GitHub Actions`
 
 ## Local Development
 
