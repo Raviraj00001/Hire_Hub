@@ -43,6 +43,24 @@ npm run dev
 
 Frontend runs on `http://localhost:3000`.
 
+## GitHub Pages Deployment
+
+Frontend GitHub Pages URL:
+
+```text
+https://ravirajj0001.github.io/Hire_Hub/
+```
+
+Important:
+
+- GitHub Pages hosts only the frontend
+- backend must be deployed separately
+- set your deployed backend URL in [frontend/.env.production](/c:/Users/Ravi%20raj%20kumar/Pm4/frontend/.env.production)
+
+Deployment guide:
+
+- [frontend/DEPLOYMENT.md](/c:/Users/Ravi%20raj%20kumar/Pm4/frontend/DEPLOYMENT.md)
+
 ## Main Features
 
 - Register and login with simple database storage
