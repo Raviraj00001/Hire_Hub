@@ -4,9 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./styles.css";
 
+const basename = import.meta.env.PROD ? "/Hire_Hub" : "/";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Hire_Hub">
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
